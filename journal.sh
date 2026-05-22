@@ -2,13 +2,13 @@
 
 # A script to create and open a daily journal file
 
-
+~
 DIR="/c/Users/240148438/journal"
 
 # cd "$HOME/journal"
 cd "$DIR"
 git add .
-git commit -m "update previous journal"
+git commit -m "updated yesterday's journal"
 git pull 
 
 
@@ -23,7 +23,7 @@ fi
 # add the previous contents of the journal folder (yesterday, etc) to a git commit
 cd "$DIR"
 git add .
-git commit -m "update previous journal"
+git commit -m "created new journal"
 git push
 
 # Open the file in VS Code whether it already existed or not
