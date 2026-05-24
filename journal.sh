@@ -3,12 +3,13 @@
 # A script to create and open a daily journal file
 
 ~
-DIR="/c/Users/240148438/journal"
+# DIR="/c/Users/240148438/journal"
+DIR="~/journal"
 
 # cd "$HOME/journal"
 cd "$DIR"
 git add .
-git commit -m "updated yesterday's journal"
+git commit -m "updated previous journal entry"
 git pull 
 
 
