@@ -13,9 +13,9 @@ fi
 
 # cd "$HOME/journal"
 cd "$DIR"
-git add . -q
-git commit -m "updated previous journal entry" -q
-git pull -q
+git add . 
+git commit -m "updated previous journal entry" >/dev/null 2>&1
+git pull
 
 
 # Create a new file path and store it in a variable
@@ -28,8 +28,8 @@ fi
 
 # add the previous contents of the journal folder (yesterday, etc) to a git commit
 cd "$DIR"
-git add . -q
-git commit -m "created new journal" -q
+git add . 
+git commit -m "created new journal" >/dev/null 2>&1
 git push -q
 
 # Open the file in VS Code whether it already existed or not
