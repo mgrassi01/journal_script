@@ -2,9 +2,14 @@
 
 # A script to create and open a daily journal file
 
-~
+
 # DIR="/c/Users/240148438/journal"
-DIR="~/journal"
+DIR="$HOME/journal"
+
+if [ ! -d "$DIR" ]; then
+    cd $HOME
+    git clone git@github.com:mgrassi01/journal.git
+fi
 
 # cd "$HOME/journal"
 cd "$DIR"
